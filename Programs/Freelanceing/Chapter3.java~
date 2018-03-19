@@ -1,0 +1,12 @@
+/* James Deromedi
+ * Chapter 3 End Questions */
+import java.util.Scanner;
+public class Chapter3 {
+  public static void main ( String [] args ) {
+    Scanner scan = new Scanner ();
+    System.out.println ( "Please enter your password: " );
+    String firstPass = Scanner.nextLine ();
+    System.out.println ( firstPass );
+  }
+}
+    

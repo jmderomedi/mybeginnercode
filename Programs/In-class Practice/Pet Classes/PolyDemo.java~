@@ -1,0 +1,12 @@
+/* Polymorphism Demo
+ * MCS 141
+ * 3/28/16 */
+
+public class PolyDemo {
+  public static void main (String [] args) {
+    //array to hold Pet objects
+    Pet [] pets = new Pet [3];
+    
+    
+  }
+}

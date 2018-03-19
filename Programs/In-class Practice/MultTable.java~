@@ -1,0 +1,23 @@
+/* 2 dimensional array demo
+ * MCS 141
+ * 4/19/16 */
+
+public class MultTable {
+  public static void main ( String [] args ) {
+    final int MAX = 15; // maximun value of multiplication table
+    /*array to hold values */
+    int table [][] = new int [MAX + 1][MAX + 1];
+    //fill the table with products
+    for (int i = 0; i <table.length; i++) { //outer loop loops through rows
+      for (int j = 0; i <table[i].length; j++) { //inner loop loops throughs columns
+        table[i][j] = i*j;
+      }
+    }
+    //Printing out the array
+    for (int i = 0; i <table.length; i++) {
+      for (int j = 0; i <table[i].length; j++){
+        System.out.println (table[i][j] + "\t");
+      }
+    }
+  }
+}

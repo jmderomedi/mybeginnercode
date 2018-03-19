@@ -1,0 +1,30 @@
+/* Chapter 3 Assignments
+ * 6/23/2016 */
+import java.util.*;
+import java. text.*;
+
+public class ChapterThree {
+  public static void main ( String [] args) {
+    Scanner scan = new Scanner ( System.in);
+    NumberFormat currency = new NumberFormat.getCurrencyInstance();
+    
+    System.out.println("Please enter a total number of quarters");
+    int quarters = scan.nextInt();
+    
+    System.out.println("Please enter a total number of dimes");
+    int dimes = scan.nextInt();
+    
+    System.out.println("Please enter a total number of nickels");
+    int nickels = scan.nextInt();
+    
+    quarters = quarters * 25;
+    dimes = dimes * 10;
+    nickels = nickels * 5;
+    
+    double subtotal = quarters + dimes + nickels;
+    
+    subtotal /= 100;
+    
+    System.out.println (currency.format(subtotal));
+  }//END
+} //END

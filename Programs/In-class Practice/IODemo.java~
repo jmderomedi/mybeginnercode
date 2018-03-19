@@ -1,0 +1,13 @@
+/* Input/Output Demo with JOption Pane
+ * James Deromedi
+ * MCS 141 */
+import javax.swing.JOptionPane;
+
+public class IODemo {
+  public static void main ( String [] args ) {
+    /* prompt user for name using imput dialog */
+    String name;
+    name = JOptionPane.InputDialog( null, "Please enter your name: ");
+    
+  }
+}

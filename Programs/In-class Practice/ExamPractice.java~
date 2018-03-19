@@ -1,0 +1,15 @@
+/*James Deromedi
+ * MCS 141
+ * Practice */
+import javax.swing.JOptionPane;
+
+public class ExamPractice {
+  public static void main (String [] args ) {
+    String fName = JOptionPane.showInputDialog(null, "Hello! What is your first name? " );
+    JOptionPane.showMessageDialog( "Why hello " +fName );
+    String lName = JOptionPane.showInputDialog( null, "" +fname + " what is your last name?" );
+    
+    
+    
+  }
+}

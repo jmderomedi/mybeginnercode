@@ -1,0 +1,15 @@
+/*Multi-Dimensional Array Demo 2
+ * MCS 141
+ * 4/19/16 */
+
+public class MultiArrayDemo2 {
+  public static void main (String [] args ) {
+    int array [][] = { {1,2,5,7}, {2,4,6,8,10}, {10,20,30} };
+    
+    System.out.pritnln(array.length);
+    for (int i = 0; i<array.length; i++ ) {
+      System.out.println(array[i].length);
+    }
+    
+  }
+}

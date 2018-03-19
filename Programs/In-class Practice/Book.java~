@@ -1,0 +1,34 @@
+public class Book {
+  private String title;
+  private String author;
+   
+  public Book () {
+    title = "unknown";
+    author = "unknown";
+  }
+   
+  public Book (String titleIn, String authorIn) {
+    setTitle(titleIn);
+    setAuthor(authorIn);
+  }
+   
+  public String getTitle() {
+    return title;
+  }
+   
+  public String getAuthor() {
+    return author;
+  }
+   
+  public void setTitle(String newTitle) {
+    title = newTitle;
+  }
+   
+  public void setAuthor(String newAuthor) {
+    author = newAuthor;
+  }
+   
+  public String toString() {
+    return title + " by " + author;
+  }
+}

@@ -1,0 +1,11 @@
+/* Array Practice 2
+ * 6/28/16 */
+import java.util.*;
+
+public class ArrayPractice2 {
+  public static void main (String [] args) {
+    
+    ArrayList <String> inputArray;
+  }//END
+  }//END
+  

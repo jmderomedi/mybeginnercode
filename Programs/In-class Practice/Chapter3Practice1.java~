@@ -1,0 +1,84 @@
+/*  In-Class Practice on the String, DecimalFormat, and Random classes
+*/
+ 
+public class Chapter3Practice1
+{
+  public static void main( String [] args )
+  {
+   
+    //  1. Declare a String s1 using the "new" keyword.  Instantiate it to "Computer Science".
+     
+     
+    //  2. Declare a String s2 without using the "new" keyword.  Instantiate it to "is amazing."
+     
+     
+    //  3. Declare a String s3.  Instantiate it to be s1 + s2.
+     
+     
+    //  4. Output your three strings to the console.
+     
+     
+    //  5. Fix s3 so it outputs with better formatting and output it again to the console.
+     
+     
+    //  6. Uncomment the statement below.  Fix it so it prints the intended text.
+    //     System.out.println("The sum of 3 and 7 is " + 3 + 7 + ".");
+     
+     
+    //  7.  Output the result when the toUpper method is called on s3.
+     
+     
+    //  8.  Instantiate a String called name to your name in the format "Last name, First name"
+     
+     
+    //  9.  Instantiate an int as the length of "name"
+     
+     
+    //  10.  Instantiate an int to be the location of the comma in "name"
+     
+     
+    //  11.  Write code to output your last name only
+     
+     
+    //  12.  Write code to output your first name only
+     
+     
+    //  13.  Go back to the top of the file (before public class ... ) and import the DecimalFormat class
+    //        from java.text
+     
+     
+    //  14.  Declare a DecimalFormat object and instantiate it to a pattern that will output currency
+    //       using comma separators for large values (so 12345678.9 would output as $12,345,678.90 ).
+     
+     
+     
+    //  15.  Declare a double with a value of 12345678.9
+     
+     
+     
+    //  16.  Output your double by formating it using the your DecimalFormat object
+     
+     
+     
+    //  17.  Go back to the top of the file (before public class ... ) and import the Random class
+    //        from java.util
+     
+     
+     
+    //  18.  Instantiate a new Random object called randomInt
+     
+     
+     
+    //  19.  Write code to simulate the roll of two six-sided dice and output the sum
+     
+     
+     
+    //  20.  Write code to generate and output a random number between 1 and 1000 (inclusive)
+     
+     
+         
+    //  21.  Write code to generate and output a random number between 10 and 15 (inclusive)
+     
+     
+  }
+}

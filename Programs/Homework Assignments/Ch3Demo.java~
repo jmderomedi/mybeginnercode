@@ -1,0 +1,15 @@
+/* Scanner class
+ * MCS 141
+ * 2/4/2016 */
+import java.util.Scanner;
+
+public class Ch3Demo {
+  public static void main (String [] args ) {
+    /*create a scanner object and link to console */
+    Scanner scan = new Scanner(System.in);
+    
+    /*Promted the user for input */
+    System.out.print ("Please enter your name: ");
+    String name = scan.nextLine();
+    
+    System.out.println("Welcome " +name + "!");

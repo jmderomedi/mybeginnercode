@@ -1,0 +1,6 @@
+import javax.swing.JOptionPane;
+public class MakeChange2 {
+  public static main void (String [] args ) {
+    
+   String valueInput;
+   valueInput = JOptionPane.showInputDialog (null, "ENTER" );

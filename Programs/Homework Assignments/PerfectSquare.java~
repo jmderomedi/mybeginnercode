@@ -1,0 +1,24 @@
+/* James Deromedi
+ * MCS 141
+ * 1/28/16
+ * Perfect Square */
+
+public class PerfectSquare
+{
+system main static void (String [] args )
+ {
+
+    int ps1 = 1 * 1;
+    int ps2 = 2 * 2;
+    int ps3 = 3 * 3;
+    int ps4 = 4 * 4;
+    int ps5 = 5 * 5;
+    int ps6 = 6 * 6;
+    int ps7 = 7 * 7;
+    int ps8 = 8 * 8;
+    int ps9 = 9 * 9;
+    int ps10 = 10 * 10;
+    
+    System.out.println ("The square of 1 is " +ps1 ".");
+  }
+}

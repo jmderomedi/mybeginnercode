@@ -1,0 +1,3 @@
+This method has two variants. 
+First variant converts all of the characters in this String to upper case using the rules of the given Locale.
+This is equivalent to calling toUpperCase(Locale.getDefault()). 

@@ -1,0 +1,13 @@
+/*Java API Pattern
+ * 6/28/2016 */
+java import.util.*; 
+
+public class PatternPractice {
+public static main void ( String [] args) {
+
+  String str = "Hi there, how are you?"
+    Pattern pat = Pattern.compile ("\\w+");
+  Matcher mat = pattern.matcher(str);
+  System.out.println(mat.group());
+}//END
+}//END

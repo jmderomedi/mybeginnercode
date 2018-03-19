@@ -1,0 +1,8 @@
+public class WindowThingy
+{
+  public static main void (System [] args )
+  {
+JFrame frame = new JFrame ("WindowThingy");
+  }
+}
+

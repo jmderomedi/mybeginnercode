@@ -1,0 +1,161 @@
+/*James Deromedi
+ * MCS 141
+ * 3/4/16 */
+import java.util.*;
+import java.text.*;
+
+public class Squaring 
+{
+  public static void main ( String [] args )
+  {
+    /*Creating and intializing variables */
+    Scanner scan = new Scanner (System.in);
+    DecimalFormat num= new DecimalFormat ("#,##0");
+    int number = 3;
+    int square = 0;
+    boolean valid = false;
+    int i = 0;
+    
+    /*Prompt for input and creating boolean */
+    System.out.println( "Please enter an integer.!\nEither postive or negitive!\nNot zero or one... I will know.." );
+    if((valid) == scan.hasNextInt());
+    {
+      number=scan.nextInt();
+    }
+    
+    // End of IF statement
+    
+    while (valid) //When the first input was an integer and not a 1 or 0
+    {
+     /*while ((number ==  1) || (number == 0))
+      {
+        System.out.println("Please follow the intructions\nTry again" );
+        number = scan.nextInt();
+        scan.nextLine();
+        } */
+      System.out.println ("Great thats a integer!");
+      square = (int)Math.pow(number, 1);
+      while (square <= 1000000 )
+      {
+        switch ( i) 
+        {
+          case 0:
+            int square1 = square;
+            square = (int)Math.pow(square, 2);
+            System.out.println(num.format(square1) + " squared is " + num.format(square));
+            break;
+          case 1:
+            square1 = square;
+            square = (int)Math.pow(square, 2);
+            System.out.println(num.format(square1) + " squared is " + num.format(square));
+            break;
+          case 2:
+            square1 = square;
+            square = (int)Math.pow(square, 2);
+            System.out.println(num.format(square1) + " squared is " + num.format(square));
+            break;
+          case 3:
+            square1 = square;
+            square = (int)Math.pow(square, 2);
+            System.out.println(num.format(square1) + " squared is " + num.format(square));
+            break;
+          case 4:
+            square1 = square;
+            square = (int)Math.pow(square, 2);
+            System.out.println(num.format(square1) + " squared is " + num.format(square));
+            break;
+          case 5:
+            square1 = square;
+            square = (int)Math.pow(square, 2);
+            System.out.println(num.format(square1) + " squared is " + num.format(square));
+            break;
+        } // End of first SWITCH statement
+        i++;
+        
+      } //End of math WHILE loop
+      
+      System.out.println("The number " +num.format(square) + " is over million. It took " +i + " times to get there." );
+      break;
+    } // End of first WHILE loop
+    
+    
+    while (!valid)//When the first input was not a integer
+    {
+      System.out.println("Please follow the intructions\nTry again" );
+          scan.nextLine();
+          scan.nextLine();
+     /* if ((number == 1 && number == 0))
+        {
+          System.out.println("Please follow the intructions\nTry again" );
+          scan.nextLine();
+      }
+         else
+           System.out.println("Please follow the intructions\nTry again" );
+           scan.nextLine(); */
+    
+        while (valid) 
+      {
+        number = scan.nextInt();
+        if (number == 1|| number == 0)
+        {
+          System.out.println("Please follow the intructions\nTry again" );
+          scan.nextLine();
+          
+          break;
+        } /*
+        / if (number == 0 )
+        {
+          System.out.println("Please follow the intructions\nTry again" );
+          scan.nextLine();
+          break;
+        } */
+        System.out.println ("Great thats an integer! You did it!");
+        scan.nextLine();
+        
+        square = (int)Math.pow(number, 1);
+        while (square <= 1000000 )
+        {
+          switch ( i) 
+          {
+            case 0:
+              int square1 = square;
+              square = (int)Math.pow(square, 2);
+              System.out.println(num.format(square1) + " squared is " + num.format(square));
+              break;
+            case 1:
+              square1 = square;
+              square = (int)Math.pow(square, 2);
+              System.out.println(num.format(square1) + " squared is " + num.format(square));
+              break;
+            case 2:
+              square1 = square;
+              square = (int)Math.pow(square, 2);
+              System.out.println(num.format(square1) + " squared is " + num.format(square));
+              break;
+            case 3:
+              square1 = square;
+              square = (int)Math.pow(square, 2);
+              System.out.println(num.format(square1) + " squared is " + num.format(square));
+              break;
+            case 4:
+              square1 = square;
+              square = (int)Math.pow(square, 2);
+              System.out.println(num.format(square1) + " squared is " + num.format(square));
+              break;
+            case 5:
+              square1 = square;
+              square = (int)Math.pow(square, 2);
+              System.out.println(num.format(square1) + " squared is " + num.format(square));
+              break;
+          } // End of secound SWITCH statement
+          
+          i++;
+        } //End of math WHILE loop 
+        
+        System.out.println("The number " +num.format(square) + " is over million. It took " +i + " times to get there." );
+        
+      } // End of IF statement
+    } //End of second WHILE loop
+  }
+}
+

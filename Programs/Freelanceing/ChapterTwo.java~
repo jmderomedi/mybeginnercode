@@ -1,0 +1,15 @@
+/* Chapter 2 Programming Assignments
+ * 6/23/2016 */
+
+Public static main void ( String [] args) {
+  public class ChapterTwo {
+    
+    /*Calculates and outputs the square roots from 1 to 9 */
+    int n = 1;
+    for (int i = 1; i < 10; i++) {
+      i = Math.abs (i);
+      System.out.println(i);
+    }
+    
+  } //END
+} // END

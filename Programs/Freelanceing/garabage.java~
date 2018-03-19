@@ -1,0 +1,6 @@
+public class  garabage {
+  public static main void ( string [] args ) {
+    Scanner scan = new Scanner(System.in);
+    int f = 54345345;
+  }
+}

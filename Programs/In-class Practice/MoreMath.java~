@@ -1,0 +1,9 @@
+/*MoreMath Class
+  Varargs demo
+  MCS 141
+  4/7/16 */
+
+public class MoreMath {
+//Method that finds the max of any number of integers
+  
+  public static max {

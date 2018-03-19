@@ -1,0 +1,31 @@
+/* Temperature Conversion
+   Deromedi, James
+   MCS 141 */
+ 
+public class TemperatureConversion
+{
+   public static void main( String [] args )
+   {
+      //***** 1. declare any constants here
+     final cel =(5/9)(fer-32);
+     final fer2 = ((9/5)cel) + 32
+    
+             
+      //***** 2.  declare temperature in Fahrenheit as an int 
+       int fer = 49
+             
+      //***** 3. calculate equivalent Celsius temperature   
+      System.out.println (cel)
+             
+      //***** 4. output the temperature in Celsius
+        
+                                                   
+      //***** 5. convert Celsius temperature back to Fahrenheit
+         
+                 
+      //***** 6. output Fahrenheit temperature to check correctness 
+         
+                 
+   }
+}
+ 

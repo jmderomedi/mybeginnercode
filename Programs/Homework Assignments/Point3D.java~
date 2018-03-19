@@ -1,0 +1,11 @@
+/*MCS 141
+ * 5/4/16 May the 4th be with you
+ * Point 3D Class */
+
+public class Point3D extends Point {
+  private double z;
+  
+  public Point3D (double z) {
+    
+  }
+}//END

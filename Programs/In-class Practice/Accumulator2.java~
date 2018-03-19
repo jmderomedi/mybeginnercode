@@ -1,0 +1,32 @@
+/*Whiel loop acumulator with average */
+import java.util.Scanner;
+
+public class Accumulator2 {
+  public static void main ( String [] args ) {
+    
+    final int SENTINEL = -1;
+    int number;
+    int total = 0;
+    int count = 0;
+    double average;
+    
+    /*Assuming the value is an integer */
+    Scanner scan = new Scanner (System.in);
+    System.out.println( "Please enter a positive interger\n(-1 to quit): " );
+    number = scan.nextInt();
+    
+    while ( number != SENTINEL )
+    {
+      total += number;
+      System.out.println( "Thank you, please enter another integer\n(-1 to quit): " );
+      number = scan.nextInt();
+      count++;
+    } /*end of loop */
+    
+    average = (double)(total)/count;
+    
+    System.out.println("The total is " +total );
+    System.out.println( " The average of the numbers are " +average );
+    
+  }
+}

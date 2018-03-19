@@ -1,0 +1,8 @@
+public class Cat extends Pet {
+  
+  //override of the speak method
+  public void speak () {
+    System.out.println("Meow!");
+  }
+  
+}

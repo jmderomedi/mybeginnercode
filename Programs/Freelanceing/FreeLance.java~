@@ -1,0 +1,70 @@
+public class FreeLance
+{
+  public static void main ( String [ ] args )
+  {
+    //How many seconds are in one century
+    //The long way
+    int years = 100;
+    int weeks = 52;
+    int days = 7;
+    int hours = 24;
+    int minutes = 60;
+    int seconds = 1;
+   
+    /* There are 60 seconds in a minute
+     * Multiply 1 second by 60
+     *To achieve how many seconds in a minute*/
+    int secInAMin = seconds * minutes;
+   //System.out.println ( "There are " +secInAMin +  " seconds in a minute" );
+   
+   /*There are 60 minutes in a hour
+    * Multiply 60 seconds by 60 
+    *To achieve how many seconds in a hour*/
+   int secInAHour = secInAMin * minutes;
+   //System.out.println ( "There are " +secInAHour + " seconds in a hour" );
+   
+   /*There are 24 hours in a day
+    * Multiply 3600 seconds by 24 
+    *To achieve how many seconds in day*/
+   int secInADay = secInAHour * hours;
+   //System.out.println ( "There are " +secInADay + " seconds in a day" );
+   
+   /*There are 7 days in a week
+    * Multiply 86400 seconds by 7 
+    *To achieve how many seconds in a week*/
+   int secInAWeek = secInADay * days;
+   //System.out.println ( "There are " +secInAWeek + " seconds in a week" );
+   
+   /*There are 52 weeks in a year
+    * Multiply 604800 seconds by 52
+    * To achieve how many seconds in a year */
+   int secInAYear = secInAWeek * weeks;
+   //System.out.println ( "There are " +secInAYear + " seconds in a year" );
+
+   
+   /*There are 100 years in a century
+    * Multiply 31449600 by 100
+    * To achieve how many seconds in a century */
+   int secInACentury = secInAYear * years;
+   System.out.println ( "There are " +secInACentury + " seconds in a century" );
+   
+ 
+   //How many seconds in a century
+   //The shortcut way
+   
+   /*One century is 100 years
+   int sec = 100; */
+   
+  int sec = 356;
+   
+   sec *= 24;
+   
+   sec *= 60;
+   
+   sec *= 60;
+   
+   System.out.println ( +sec );
+  }
+}
+    
+    

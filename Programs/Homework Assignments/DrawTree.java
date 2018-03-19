@@ -1,0 +1,42 @@
+/* James Deromedi
+ *  MCS 141
+ * 1/28/16
+ * DrawTree */
+
+public class DrawTree
+{
+  public static void main (String [] args )
+  {
+    /* A pretty pine tree 
+     * A very messy looking way to make a tree */
+    //System.out.println ( "\t  *\n\t ##\n\t###");
+    //System.out.println ( "                 ####\n                #####" );
+    //System.out.println ( "               ######\n\t  !!\n\t  !!"); 
+    
+    
+    /* A pine tree with a star
+     * A nicer way to make the string format to look */
+    
+    System.out.println ("");
+    String heading = "Pine Tree";
+    String divider = "-------------";
+    
+    String star = "*";
+    String one = "#";
+    String two = "##";
+    String three = "###";
+    String stem = "!!";
+    
+    System.out.printf ("%22s%n" , heading );
+    System.out.printf ("%23s%n", divider);
+    
+    System.out.printf ("%20s%n%20s%n%20s%n", star, two,three );
+    System.out.printf ("%19s%s%n%18s%s%n", three, one, three, two );
+    System.out.printf ("%17s%s%n%16s%s%s%n", three, three, three, three, one );
+    System.out.printf ("%15s%s%s%n%21s%n%21s%n%21s%n", three, three, two, stem, stem, stem );
+    
+    System.out.printf ("%23s", divider);
+    System.out.println ("");
+    
+  }
+}

@@ -1,0 +1,29 @@
+public lass DrawTreea
+{
+  public static void main(String[] args) 
+  {
+    System.out.println(" This is my awesome coconut tree on an island");
+    System.out.println(" ----------------------------------------------");
+    System.out.println("          _  _          _  _  ");
+    System.out.println("       //      \\\\    //      \\\\         ");
+    System.out.println("      !         \\\\  //         !      "); 
+    System.out.println("        _  _  _   !!   _  _  _      "); 
+    System.out.println("     //         \\\\!!//          \\\\   "); 
+    System.out.println("   //       =  ={****}=  =        \\\\ ");
+    System.out.println("  !      //      {**}      \\\\       !");
+    System.out.println("       //         00         \\\\     ");
+    System.out.println("      !!         0000         !!      "); 
+    System.out.println("      !          {}{}          !      "); 
+    System.out.println("                 {}{}");
+    System.out.println("                 {{}}");
+    System.out.println("                 {{{}"); 
+    System.out.println("                 {}}}"); 
+    System.out.println("               {}{}{}{}"); 
+    System.out.println("  ^   ^    ---------------  ^    ^    ");
+    System.out.println(" ^     ^ --------------------   ^   ^  ");
+    System.out.println(" ^  ^  -------------------------  ^ ^  ");
+    System.out.println("^   ^------------------------------  ^   ^   ");
+    System.out.println("^   ^  ^    ^     ^    ^    ^   ^   ^  ^   ^   ");
+    System.out.println("^   ^  ^   ^   ^  ^   ^  ^    ^    ^   ^   ^   ^  ^ ");
+  }
+}

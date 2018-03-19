@@ -1,0 +1,89 @@
+public class Point {
+  
+  //Variables
+  private double x;
+  private double y;
+  
+  /*---------------------------------------------------*/
+  //Default Constructor
+  public Point() {
+    x = 0;
+    y = 0;
+  }
+  
+  /*---------------------------------------------------*/
+  //Overloaded Constructor
+  public Point (double newX, double newY ) {
+    this();
+    x = newX;
+    y = newY;
+  }
+  
+  /*---------------------------------------------------*/
+  //GetX
+  public double getX () {
+    return x;
+  }
+  
+  /*---------------------------------------------------*/
+  //GetY
+  public double getY () {
+    return y;
+  }
+  
+  /*---------------------------------------------------*/
+  //SetX
+  public void setX ( double newerX ) {
+    x = newerX;
+  }
+  
+  /*---------------------------------------------------*/ 
+  //setY
+  public void setY ( double newerY) {
+    y = newerY;
+  }
+  
+  /*---------------------------------------------------*/
+  //DistanceTo from point to point
+  public double distanceTo( Point p ) {
+    double dist = Math.sqrt((this.getX() - p.getX())*(this.getX()  -p.getX()) + (this.getY() - p.getY())*(this.getY() - p.getY()));
+    return dist;
+  }
+  
+  /*---------------------------------------------------*/
+  //Overload for  DistanceTo with signature
+  public double distanceTo (double x1, double y1) {
+    //double dist = Math.sqrt((this.getX() - x1)*(this.getX()  - x1) + (this.getY() - y1)*(this.getY() - y1));
+    double dist = this.distanceTo(x1,y1);
+    return dist;
+  }
+  
+  /*---------------------------------------------------*/
+  //Overload to DistanceTo from origin
+  public double distanceTo () {
+    //double dist = Math.sqrt((this.getX())*(this.getX()) + (this.getY())*(this.getY()));
+    double dist = this.distanceTo(0,0);
+    return dist;
+  }
+  
+  /*---------------------------------------------------*/
+  //ToString Method
+  public String toString() {
+    return "This point has an X value of " +this.getX() + " and a Y value of  " +this.getY();
+  }
+  
+  /*---------------------------------------------------*/
+  //Equals
+  public boolean equals(Object p) {
+    if (!(p instanceof Point))
+      return false;
+    else
+    {
+      Point objPoint = (Point) p;
+      if (this.getX() == objPoint.getX() && this.getY() == objPoint.getY())
+        return true;
+      else
+        return false;
+    }
+  }
+}

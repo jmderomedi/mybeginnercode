@@ -1,0 +1,16 @@
+/* MCS 141
+ * 5/4/16 May the 4th be with you
+ * FileReader
+ * James Deromedi */
+import java.io.*;
+
+public class FileReader {
+  String input;
+  String output;
+  
+  try {
+    Scanner file = new Scanner (new File ("input.txt"));
+    input = file.nextLine();
+    
+    
+    file.close(); 

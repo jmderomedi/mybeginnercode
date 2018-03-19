@@ -1,0 +1,19 @@
+/* Conversion Demo 
+ * MCS 141
+ * 1/28/16 */
+
+public class ConversionDemo
+{
+  public static void main ( String [] args )
+  {
+    //Convert 6 cm to inches
+    //Declare known values
+    final double INCH_TO_CM =2.54;
+    int cm = 6;
+    int inch;
+    
+    cm/INCH_TO_CM = inch
+  }
+}
+    
+    

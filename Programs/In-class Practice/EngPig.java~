@@ -1,0 +1,111 @@
+/*English-Pig Latin
+ * 6/24/2016 */
+import java.util.*;
+import java.util.regex.*;
+
+public class EngPig {
+  public static void main (String [] args) {
+    Scanner scan = new Scanner (System.in);
+    Pattern pat = Pattern.compile ("\\w+");
+    Matcher mat;
+    
+    System.out.println("English to Pig Latin (Type 1), Pig Latin to English (Type 2).");
+    while (!scan.hasNextInt()) {
+      System.err.println("Not a number!");
+      System.out.println("English to Pig Latin (Type 1), Pig Latin to English (Type 2).");
+      scan.next();
+    }
+    
+    int num = scan.nextInt();
+    while (num >=3 || num <=0){
+      while (num >= 3) {
+        System.err.println ("Typed greater than 2");
+        System.out.println("English to Pig Latin (Type 1), Pig Latin to English (Type 2).");
+        while (!scan.hasNextInt()) {
+          System.err.println("Not a number!");
+          System.out.println("English to Pig Latin (Type 1), Pig Latin to English (Type 2).");
+          scan.next();
+        }
+        num = scan.nextInt();
+      }
+      
+      while (num <= 0) {
+        System.err.println ("Typed less than 0");
+        System.out.println("English to Pig Latin (Type 1), Pig Latin to English (Type 2).");
+        while (!scan.hasNextInt()) {
+          System.err.println("Not a number!");
+          System.out.println("English to Pig Latin (Type 1), Pig Latin to English (Type 2).");
+          scan.next();
+        }
+        num = scan.nextInt();
+      }
+    }
+    
+    
+    String input;
+    if (num == 1){
+      String garbage = scan.nextLine();
+      System.out.println("English to Pig Latin\n");
+      System.out.println("Please enter your sentence.");
+      while(scan.hasNextInt()){
+        System.err.println("Not a sentence!");
+        System.out.println("Please enter your sentence");
+        scan.nextLine();
+      }
+      input = scan.nextLine();
+      input = input.toLowerCase();
+      mat = pat.matcher(input);
+      while (mat.find()) {
+        System.out.println (mat.group());
+      }
+      if ((input.charAt(0)=='a'|| input.charAt(0)=='e' || input.charAt(0)== 'i' || input.charAt(0)== 'o')&&mat.find()) {
+        //System.out.println("y");
+        input = input + "yay";
+        System.out.println(input);
+      }
+      else if (input.startsWith("ch") || input.startsWith("th") || input.startsWith("qu")) {
+        String firstTwo = input.substring(0,2);
+        input = input.substring(2);
+        input = input + firstTwo + "ay";
+        System.out.println(input);
+      }
+      else {
+        char first = input.charAt(0);
+        input = input.substring(1);
+        input = input+first+"ay";
+        System.out.println(input);
+      }
+    }
+    
+    if (num == 2) {
+      //System.out.println("Typed 2");
+      String garbage = scan.nextLine();
+      System.out.println("Pig Latin to English\n");
+      System.out.println("Please enter your sentence.");
+      while(scan.hasNextInt()){
+        System.err.println("Not a sentence!");
+        System.out.println("Please enter your sentence");
+        scan.nextLine();
+      }
+      input = scan.nextLine();
+      
+      input = input.toLowerCase();
+      
+      if (input.endsWith("yay")) {
+        String last = input.substring(input.length()-3,input.length());
+        input = input.replace(last,"");
+        System.out.println(input);
+      }
+      
+      if (input.endsWith("ay")) {
+        String last = input.substring(input.length()-2,input.length());
+        input = input.replace(last,"");
+        String firstLast = input.substring(input.length()-1);
+        input = "" + firstLast + input;
+        input= input.substring(0, input.length()-1);
+        System.out.println(input);
+      }
+    }
+    
+  } //END
+} //END

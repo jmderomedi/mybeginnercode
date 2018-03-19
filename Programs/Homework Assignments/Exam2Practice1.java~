@@ -1,0 +1,14 @@
+public class Exam2Practice1 {
+  public static void main ( String [] args) {
+    Scanner scan = new Scanner (system.in);
+    int input;
+    int i = 0;
+    System.out.println( "Enter an integer over 10: " );
+    if (scan.nextInt() < 10) {
+      System.err.println( "NOT AN INTEGER!" );
+      System.out.println( "Enter an integer over 10: " );
+    }
+    
+    
+  }
+}

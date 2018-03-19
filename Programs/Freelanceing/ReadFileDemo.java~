@@ -1,0 +1,15 @@
+import java.io.*;
+import.util.*;
+
+public class ReadFileDemo {
+  public static void main (String [] args) throws IOException {
+    
+    File myFile = new File ("input.txt");
+    Scanner fileRead = new Scanner (myFile);
+    
+    int max;
+    int min;
+    double average;
+    int count;
+    while (fileRead.hasNextInt() )
+    {
